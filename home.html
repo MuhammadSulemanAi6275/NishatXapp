@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Dashboard</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="user-info">
+                <div class="user-avatar">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 7H3C2.45 7 2 6.55 2 6V4C2 2.9 2.9 2 4 2H20C21.1 2 22 2.9 22 4V6C22 6.55 21.55 7 21 7Z" fill="white"/>
+                        <path d="M21 8H3C1.9 8 1 8.9 1 10V20C1 21.1 1.9 22 3 22H21C22.1 22 23 21.1 23 20V10C23 8.9 22.1 8 21 8Z" fill="white"/>
+                    </svg>
+                </div>
+                <span class="username">Nishat X</span>
+            </div>
+            <div class="header-actions">
+                <button class="notification-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 22C13.1 22 14 21.1 14 20H10C10 21.1 10.89 22 12 22ZM18 16V11C18 7.93 16.36 5.36 13.5 4.68V4C13.5 3.17 12.83 2.5 12 2.5C11.17 2.5 10.5 3.17 10.5 4V4.68C7.63 5.36 6 7.92 6 11V16L4 18V19H20V18L18 16Z" fill="#9CA3AF"/>
+                    </svg>
+                </button>
+                <button class="profile-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="#9CA3AF"/>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- Top Leaders Section -->
+        <div class="leaders-section">
+            <div class="section-header">
+                <div class="crown-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 16L3 5L8.5 12L12 4L15.5 12L21 5L19 16H5Z" fill="#F59E0B"/>
+                    </svg>
+                </div>
+                <h2>Top Leaders</h2>
+                <div class="crown-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 16L3 5L8.5 12L12 4L15.5 12L21 5L19 16H5Z" fill="#F59E0B"/>
+                    </svg>
+                </div>
+            </div>
+            <p class="reset-info">January 2024 • Resets on 1st (5:05 AM PKT)</p>
+            
+            <div class="podium">
+                <!-- 2nd Place -->
+                <div class="podium-item second">
+                    <div class="position-badge">2nd</div>
+                    <div class="user-avatar-large">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Malik2" class="avatar-img">
+                    </div>
+                    <h3>Malik2</h3>
+                    <p class="earnings">$ $338</p>
+                    <div class="prize-badge">
+                        <span class="prize-amount">$10</span>
+                        <span class="prize-currency">Rs 2,780</span>
+                    </div>
+                </div>
+
+                <!-- 1st Place -->
+                <div class="podium-item first">
+                    <div class="position-badge gold">1st</div>
+                    <div class="user-avatar-large winner">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="HM" class="avatar-img">
+                        <div class="winner-badge">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 16L3 5L8.5 12L12 4L15.5 12L21 5L19 16H5Z" fill="#F59E0B"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>HM</h3>
+                    <p class="earnings">$ $551</p>
+                    <div class="prize-badge gold">
+                        <span class="prize-amount">$18</span>
+                        <span class="prize-currency">Rs 5,004</span>
+                    </div>
+                </div>
+
+                <!-- 3rd Place -->
+                <div class="podium-item third">
+                    <div class="position-badge">3rd</div>
+                    <div class="user-avatar-large">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face" alt="NomanShaikh" class="avatar-img">
+                    </div>
+                    <h3>NomanShaikh</h3>
+                    <p class="earnings">$ $261</p>
+                    <div class="prize-badge">
+                        <span class="prize-amount">$5</span>
+                        <span class="prize-currency">Rs 2,224</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="view-winners-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z" fill="#9CA3AF"/>
+                </svg>
+                View Past Winners
+            </button>
+        </div>
+
+        <!-- Get Started Section -->
+        <div class="get-started-section">
+            <div class="get-started-content">
+                <div class="star-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" fill="#8B5CF6"/>
+                    </svg>
+                </div>
+                <div class="get-started-text">
+                    <h3>Get Started</h3>
+                    <p>Purchase a package to start earning</p>
+                </div>
+                <div class="get-started-price">
+                    <span class="price">$3.00</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z" fill="#8B5CF6"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Balance Section -->
+        <div class="balance-section">
+            <div class="balance-header">
+                <h3>Total Balance</h3>
+                <div class="balance-change">
+                    <span>$0.00 today</span>
+                </div>
+            </div>
+            <div class="balance-amount">
+                <h1>$0.00</h1>
+                <p>≈ PKR 0</p>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <div class="button-row">
+                <button class="action-btn deposit">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" fill="white"/>
+                    </svg>
+                    Deposit
+                </button>
+                <button class="action-btn withdraw">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 16L10.91 9.74L4 9L10.91 8.26L12 2L13.09 8.26L20 9L13.09 9.74L12 16Z" fill="white"/>
+                    </svg>
+                    Withdraw
+                </button>
+            </div>
+            <div class="button-row">
+                <button class="action-btn follow">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M16 4C16.55 4 17 4.45 17 5V6H20C20.55 6 21 6.45 21 7C21 7.55 20.55 8 20 8H17V19C17 20.1 16.1 21 15 21H9C7.9 21 7 20.1 7 19V8H4C3.45 8 3 7.55 3 7C3 6.45 3.45 6 4 6H7V5C7 4.45 7.45 4 8 4H16Z" fill="white"/>
+                    </svg>
+                    Follow Channel
+                </button>
+                <button class="action-btn whatsapp">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M17.472 14.382C17.367 14.382 17.261 14.382 17.156 14.382C16.403 14.382 15.65 14.382 14.897 14.382C14.144 14.382 13.391 14.382 12.638 14.382C11.885 14.382 11.132 14.382 10.379 14.382C9.626 14.382 8.873 14.382 8.12 14.382C7.367 14.382 6.614 14.382 5.861 14.382C5.108 14.382 4.355 14.382 3.602 14.382C2.849 14.382 2.096 14.382 1.343 14.382C0.59 14.382 -0.163 14.382 -0.916 14.382" fill="#8B5CF6"/>
+                    </svg>
+                    Contact WhatsApp
+                </button>
+            </div>
+            <div class="button-row">
+                <button class="action-btn promo">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" fill="white"/>
+                    </svg>
+                    Promo Codes
+                </button>
+                <button class="action-btn entertainment">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M8 5V7H16V5H8ZM6 9V7C6 5.9 6.9 5 8 5H16C17.1 5 18 5.9 18 7V9L20 11V17H18V19H16V17H8V19H6V17H4V11L6 9Z" fill="white"/>
+                    </svg>
+                    Entertainment
+                </button>
+            </div>
+        </div>
+
+        <!-- Daily Ads Section -->
+        <div class="daily-ads-section">
+            <div class="ads-content">
+                <div class="ads-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19Z" fill="white"/>
+                        <path d="M8 15L11 12L8 9V15Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="ads-text">
+                    <h3>Daily Ads</h3>
+                    <p>Activate package to watch ads</p>
+                </div>
+                <button class="locked-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 8H17V6C17 3.24 14.76 1 12 1C9.24 1 7 3.24 7 6V8H6C4.9 8 4 8.9 4 10V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V10C20 8.9 19.1 8 18 8ZM12 17C11.45 17 11 16.55 11 16C11 15.45 11.45 15 12 15C12.55 15 13 15.45 13 16C13 16.55 12.55 17 12 17ZM15.1 8H8.9V6C8.9 4.29 10.29 2.9 12 2.9C13.71 2.9 15.1 4.29 15.1 6V8Z" fill="#6B7280"/>
+                    </svg>
+                    Locked
+                </button>
+            </div>
+        </div>
+
+        <!-- Earning Package Section -->
+        <div class="earning-package-section">
+            <div class="package-content">
+                <div class="package-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="package-text">
+                    <h3>Earning Package</h3>
+                    <p>$3.00 / PKR 840</p>
+                </div>
+                <button class="activate-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" fill="white"/>
+                    </svg>
+                    Activate
+                </button>
+            </div>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon purple">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" fill="#8B5CF6"/>
+                    </svg>
+                </div>
+                <h3>$0.00</h3>
+                <p>Total Earned</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon green">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M16 6L18.29 8.29L13.41 13.17L9.41 9.17L2 16.59L3.41 18L9.41 12L13.41 16L20.29 9.12L22 10.83V6H16Z" fill="#00D4AA"/>
+                    </svg>
+                </div>
+                <h3>$0.00</h3>
+                <p>Ref. Earnings</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon blue">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M16 4C16.55 4 17 4.45 17 5V6H20C20.55 6 21 6.45 21 7C21 7.55 20.55 8 20 8H17V19C17 20.1 16.1 21 15 21H9C7.9 21 7 20.1 7 19V8H4C3.45 8 3 7.55 3 7C3 6.45 3.45 6 4 6H7V5C7 4.45 7.45 4 8 4H16Z" fill="#3B82F6"/>
+                    </svg>
+                </div>
+                <h3>0</h3>
+                <p>Team Size</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon orange">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 16L3 5L8.5 12L12 4L15.5 12L21 5L19 16H5Z" fill="#F59E0B"/>
+                    </svg>
+                </div>
+                <h3>#0</h3>
+                <p>Rank</p>
+            </div>
+        </div>
+
+        <!-- Did You Know Section -->
+        <div class="info-section">
+            <div class="info-header">
+                <div class="info-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z" fill="#3B82F6"/>
+                    </svg>
+                </div>
+                <h3>Did You Know?</h3>
+            </div>
+            <div class="info-list">
+                <div class="info-item">
+                    <div class="info-bullet green"></div>
+                    <p>You can withdraw earnings without referrals - team building is optional!</p>
+                </div>
+                <div class="info-item">
+                    <div class="info-bullet green"></div>
+                    <p>Just activate your package and earn $0.20+ daily from watching ads</p>
+                </div>
+                <div class="info-item">
+                    <div class="info-bullet green"></div>
+                    <p>Package duration is lifetime - one-time payment, unlimited earnings!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Referrals Section -->
+        <div class="referrals-section">
+            <div class="referrals-header">
+                <div class="referrals-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M16 4C16.55 4 17 4.45 17 5V6H20C20.55 6 21 6.45 21 7C21 7.55 20.55 8 20 8H17V19C17 20.1 16.1 21 15 21H9C7.9 21 7 20.1 7 19V8H4C3.45 8 3 7.55 3 7C3 6.45 3.45 6 4 6H7V5C7 4.45 7.45 4 8 4H16Z" fill="#8B5CF6"/>
+                    </svg>
+                </div>
+                <h3>Referrals</h3>
+                <span class="member-count">0 members</span>
+            </div>
+            <div class="referral-link">
+                <p>Your Referral Link</p>
+                <div class="link-container">
+                    <input type="text" value="https://nisbatx.com/signup?ref=MIP8X2QR" readonly class="link-input">
+                    <button class="copy-btn" onclick="copyReferralLink()">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <path d="M16 1H4C2.9 1 2 1.9 2 3V17H4V3H16V1ZM19 5H8C6.9 5 6 5.9 6 7V21C6 22.1 6.9 23 8 23H19C20.1 23 21 22.1 21 21V7C21 5.9 20.1 5 19 5ZM19 21H8V7H19V21Z" fill="white"/>
+                        </svg>
+                    </button>
+                    <button class="share-btn" onclick="shareReferralLink()">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <path d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12C9 11.76 8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5C21 3.34 19.66 2 18 2C16.34 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12C3 13.66 4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.34C15.11 18.55 15.08 18.77 15.08 19C15.08 20.61 16.39 21.92 18 21.92C19.61 21.92 20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08Z" fill="white"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <div class="nav-item active">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M10 20V14H14V20H19V12H22L12 3L2 12H5V20H10Z" fill="#8B5CF6"/>
+                </svg>
+                <span>Home</span>
+            </div>
+            
+            <div class="nav-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M8 5V7H16V5H8ZM6 9V7C6 5.9 6.9 5 8 5H16C17.1 5 18 5.9 18 7V9L20 11V17H18V19H16V17H8V19H6V17H4V11L6 9ZM8 11V15H16V11H8Z" fill="#6B7280"/>
+                </svg>
+                <span>Watch</span>
+            </div>
+            
+            <div class="nav-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M16 4C16.55 4 17 4.45 17 5V6H20C20.55 6 21 6.45 21 7C21 7.55 20.55 8 20 8H17V19C17 20.1 16.1 21 15 21H9C7.9 21 7 20.1 7 19V8H4C3.45 8 3 7.55 3 7C3 6.45 3.45 6 4 6H7V5C7 4.45 7.45 4 8 4H16ZM15 8H9V19H15V8Z" fill="#6B7280"/>
+                </svg>
+                <span>Invite</span>
+            </div>
+            
+            <div class="nav-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H5.17L4 17.17V4H20V16Z" fill="#6B7280"/>
+                </svg>
+                <span>Chat</span>
+            </div>
+            
+            <div class="nav-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 5.5V7.5L21 9ZM22 17.5C22 19.11 20.61 20.5 19 20.5H5C3.39 20.5 2 19.11 2 17.5V10.5C2 8.89 3.39 7.5 5 7.5H19C20.61 7.5 22 8.89 22 10.5V17.5Z" fill="#6B7280"/>
+                </svg>
+                <span>Profile</span>
+            </div>
+        </nav>
+    </div>
+    
+    <script src="home.js"></script>
+</body>
+</html>

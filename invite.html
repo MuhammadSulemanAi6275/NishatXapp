@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invite Friends</title>
+    <link rel="stylesheet" href="invite.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="user-info">
+                <div class="user-avatar">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 7H3C2.45 7 2 6.55 2 6V4C2 2.9 2.9 2 4 2H20C21.1 2 22 2.9 22 4V6C22 6.55 21.55 7 21 7Z" fill="white"/>
+                        <path d="M21 8H3C1.9 8 1 8.9 1 10V20C1 21.1 1.9 22 3 22H21C22.1 22 23 21.1 23 20V10C23 8.9 22.1 8 21 8Z" fill="white"/>
+                    </svg>
+                </div>
+                <span class="username">Nishat X</span>
+            </div>
+            <div class="header-actions">
+                <button class="notification-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 22C13.1 22 14 21.1 14 20H10C10 21.1 10.89 22 12 22ZM18 16V11C18 7.93 16.36 5.36 13.5 4.68V4C13.5 3.17 12.83 2.5 12 2.5C11.17 2.5 10.5 3.17 10.5 4V4.68C7.63 5.36 6 7.92 6 11V16L4 18V19H20V18L18 16Z" fill="#9CA3AF"/>
+                    </svg>
+                </button>
+                <button class="profile-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="#9CA3AF"/>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- Page Title -->
+        <div class="page-title">
+            <h1>Invite Friends</h1>
+            <p>Share & earn commissions</p>
+        </div>
+
+        <!-- Invite Message Preview Section -->
+        <div class="message-preview-section">
+            <div class="preview-header">
+                <div class="preview-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H5.17L4 17.17V4H20V16Z" fill="#8B5CF6"/>
+                    </svg>
+                </div>
+                <h3>Invite Message Preview</h3>
+            </div>
+
+            <!-- Language Toggle -->
+            <div class="language-toggle">
+                <button class="lang-btn active" data-lang="english">English</button>
+                <button class="lang-btn" data-lang="urdu">اردو</button>
+            </div>
+
+            <!-- Message Content -->
+            <div class="message-content" id="englishMessage">
+                <div class="message-header">
+                    <div class="warning-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <path d="M1 21H23L12 2L1 21ZM13 18H11V16H13V18ZM13 14H11V10H13V14Z" fill="#F59E0B"/>
+                        </svg>
+                    </div>
+                    <span>*Join Nishat X & Start Earning!*</span>
+                </div>
+
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <div class="check-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z" fill="#00D4AA"/>
+                            </svg>
+                        </div>
+                        <span>Watch 1 ad daily = $0.20 (PKR 56)</span>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="check-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z" fill="#00D4AA"/>
+                            </svg>
+                        </div>
+                        <span>Monthly earning = $6 (PKR 1,680)</span>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="check-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z" fill="#00D4AA"/>
+                            </svg>
+                        </div>
+                        <span>Lifetime package - just $3 (PKR 840)</span>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="check-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z" fill="#00D4AA"/>
+                            </svg>
+                        </div>
+                        <span>Daily withdrawal - no waiting!</span>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="check-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z" fill="#00D4AA"/>
+                            </svg>
+                        </div>
+                        <span>Min. withdrawal: $0.15 (PKR 43)</span>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="check-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z" fill="#00D4AA"/>
+                            </svg>
+                        </div>
+                        <span>5-level referral commissions</span>
+                    </div>
+                </div>
+
+                <div class="cta-section">
+                    <div class="cta-item">
+                        <div class="bulb-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 21C9 21.55 9.45 22 10 22H14C14.55 22 15 21.55 15 21V20H9V21ZM12 2C8.14 2 5 5.14 5 9C5 11.38 6.19 13.47 8 14.74V17C8 17.55 8.45 18 9 18H15C15.55 18 16 17.55 16 17V14.74C17.81 13.47 19 11.38 19 9C19 5.14 15.86 2 12 2Z" fill="#F59E0B"/>
+                            </svg>
+                        </div>
+                        <span>Activate plan & withdraw daily!</span>
+                    </div>
+                    <div class="cta-item">
+                        <div class="arrow-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z" fill="#F59E0B"/>
+                            </svg>
+                        </div>
+                        <span>Sign up now:</span>
+                    </div>
+                </div>
+
+                <div class="signup-link">
+                    <a href="https://nisbatx.com/signup?ref=MIP8X2QR">https://nisbatx.com/signup?ref=MIP8X2QR</a>
+                </div>
+            </div>
+
+            <!-- Urdu Message (Hidden by default) -->
+            <div class="message-content hidden" id="urduMessage">
+                <div class="message-header">
+                    <div class="warning-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <path d="M1 21H23L12 2L1 21ZM13 18H11V16H13V18ZM13 14H11V10H13V14Z" fill="#F59E0B"/>
+                        </svg>
+                    </div>
+                    <span>*نثات ایکس میں شامل ہوں اور کمانا شروع کریں!*</span>
+                </div>
+
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <div class="check-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z" fill="#00D4AA"/>
+                            </svg>
+                        </div>
+                        <span>روزانہ 1 اشتہار دیکھیں = $0.20 (PKR 56)</span>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="check-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z" fill="#00D4AA"/>
+                            </svg>
+                        </div>
+                        <span>ماہانہ آمدنی = $6 (PKR 1,680)</span>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="check-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z" fill="#00D4AA"/>
+                            </svg>
+                        </div>
+                        <span>لائف ٹائم پیکج - صرف $3 (PKR 840)</span>
+                    </div>
+                </div>
+
+                <div class="signup-link">
+                    <a href="https://nisbatx.com/signup?ref=MIP8X2QR">https://nisbatx.com/signup?ref=MIP8X2QR</a>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="message-actions">
+                <button class="copy-message-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M16 1H4C2.9 1 2 1.9 2 3V17H4V3H16V1ZM19 5H8C6.9 5 6 5.9 6 7V21C6 22.1 6.9 23 8 23H19C20.1 23 21 22.1 21 21V7C21 5.9 20.1 5 19 5ZM19 21H8V7H19V21Z" fill="white"/>
+                    </svg>
+                    Copy Message
+                </button>
+                <button class="share-now-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12C9 11.76 8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5C21 3.34 19.66 2 18 2C16.34 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12C3 13.66 4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.34C15.11 18.55 15.08 18.77 15.08 19C15.08 20.61 16.39 21.92 18 21.92C19.61 21.92 20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08Z" fill="white"/>
+                    </svg>
+                    Share Now
+                </button>
+            </div>
+        </div>
+
+        <!-- Complete Work Guide Section -->
+        <div class="work-guide-section">
+            <div class="guide-header">
+                <div class="guide-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" fill="#00D4AA"/>
+                    </svg>
+                </div>
+                <h3>Complete Work Guide</h3>
+            </div>
+
+            <div class="guide-list">
+                <div class="guide-item">
+                    <div class="guide-bullet">
+                        <svg width="8" height="8" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="12" fill="#00D4AA"/>
+                        </svg>
+                    </div>
+                    <span>Package: $3 (PKR 840) - Lifetime validity</span>
+                </div>
+                <div class="guide-item">
+                    <div class="guide-bullet">
+                        <svg width="8" height="8" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="12" fill="#00D4AA"/>
+                        </svg>
+                    </div>
+                    <span>Daily Ad: Watch 1 ad = Earn $0.20 (PKR 56)</span>
+                </div>
+                <div class="guide-item">
+                    <div class="guide-bullet">
+                        <svg width="8" height="8" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="12" fill="#00D4AA"/>
+                        </svg>
+                    </div>
+                    <span>Withdrawal: 10 AM - 9 PM (Pakistan Time)</span>
+                </div>
+                <div class="guide-item">
+                    <div class="guide-bullet">
+                        <svg width="8" height="8" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="12" fill="#00D4AA"/>
+                        </svg>
+                    </div>
+                    <span>Min Withdrawal: $0.15 (PKR 42)</span>
+                </div>
+                <div class="guide-item">
+                    <div class="guide-bullet">
+                        <svg width="8" height="8" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="12" fill="#00D4AA"/>
+                        </svg>
+                    </div>
+                    <span>5-Level Commission: L1 5% • L2 3% • L3 2% • L4 1% • L5 0.5%</span>
+                </div>
+            </div>
+
+            <div class="guide-actions">
+                <button class="full-guide-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V8L14 2ZM18 20H6V4H13V9H18V20Z" fill="white"/>
+                    </svg>
+                    Full Guide
+                </button>
+                <button class="watch-video-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M8 5V19L19 12L8 5Z" fill="white"/>
+                    </svg>
+                    Watch Video
+                </button>
+            </div>
+        </div>
+
+        <!-- Team Stats Section -->
+        <div class="team-stats-section">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon purple">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M16 4C16.55 4 17 4.45 17 5V6H20C20.55 6 21 6.45 21 7C21 7.55 20.55 8 20 8H17V19C17 20.1 16.1 21 15 21H9C7.9 21 7 20.1 7 19V8H4C3.45 8 3 7.55 3 7C3 6.45 3.45 6 4 6H7V5C7 4.45 7.45 4 8 4H16Z" fill="#8B5CF6"/>
+                        </svg>
+                    </div>
+                    <h3>0</h3>
+                    <p>Total Team</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon green">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M16 6L18.29 8.29L13.41 13.17L9.41 9.17L2 16.59L3.41 18L9.41 12L13.41 16L20.29 9.12L22 10.83V6H16Z" fill="#00D4AA"/>
+                        </svg>
+                    </div>
+                    <h3>$0.00</h3>
+                    <p class="sub-text">PKR 0<br>Total Earned</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- View My Team Section -->
+        <div class="view-team-section">
+            <div class="team-content">
+                <div class="team-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M16 4C16.55 4 17 4.45 17 5V6H20C20.55 6 21 6.45 21 7C21 7.55 20.55 8 20 8H17V19C17 20.1 16.1 21 15 21H9C7.9 21 7 20.1 7 19V8H4C3.45 8 3 7.55 3 7C3 6.45 3.45 6 4 6H7V5C7 4.45 7.45 4 8 4H16Z" fill="#8B5CF6"/>
+                    </svg>
+                </div>
+                <div class="team-text">
+                    <h3>View My Team</h3>
+                    <p>See all members by level</p>
+                </div>
+                <div class="arrow-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z" fill="#9CA3AF"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Commission Levels Section -->
+        <div class="commission-section">
+            <h3 class="commission-title">Commission Levels</h3>
+            
+            <div class="levels-list">
+                <div class="level-item">
+                    <div class="level-badge">L1</div>
+                    <div class="level-info">
+                        <h4>Level 1</h4>
+                        <p>0 members</p>
+                    </div>
+                    <div class="level-earnings">
+                        <span class="percentage">5%</span>
+                        <div class="earnings-amount">
+                            <span class="amount">+$0.00</span>
+                            <span class="currency">PKR 0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="level-item">
+                    <div class="level-badge">L2</div>
+                    <div class="level-info">
+                        <h4>Level 2</h4>
+                        <p>0 members</p>
+                    </div>
+                    <div class="level-earnings">
+                        <span class="percentage">3%</span>
+                        <div class="earnings-amount">
+                            <span class="amount">+$0.00</span>
+                            <span class="currency">PKR 0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="level-item">
+                    <div class="level-badge">L3</div>
+                    <div class="level-info">
+                        <h4>Level 3</h4>
+                        <p>0 members</p>
+                    </div>
+                    <div class="level-earnings">
+                        <span class="percentage">2%</span>
+                        <div class="earnings-amount">
+                            <span class="amount">+$0.00</span>
+                            <span class="currency">PKR 0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="level-item">
+                    <div class="level-badge">L4</div>
+                    <div class="level-info">
+                        <h4>Level 4</h4>
+                        <p>0 members</p>
+                    </div>
+                    <div class="level-earnings">
+                        <span class="percentage">1%</span>
+                        <div class="earnings-amount">
+                            <span class="amount">+$0.00</span>
+                            <span class="currency">PKR 0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="level-item">
+                    <div class="level-badge">L5</div>
+                    <div class="level-info">
+                        <h4>Level 5</h4>
+                        <p>0 members</p>
+                    </div>
+                    <div class="level-earnings">
+                        <span class="percentage">0.5%</span>
+                        <div class="earnings-amount">
+                            <span class="amount">+$0.00</span>
+                            <span class="currency">PKR 0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How It Works Section -->
+        <div class="how-it-works-section">
+            <h3 class="section-title">How it works</h3>
+            
+            <div class="steps-list">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <span>Share your referral code with friends</span>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <span>They sign up using your code</span>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <span>Earn commission when they activate a package</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <div class="nav-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M10 20V14H14V20H19V12H22L12 3L2 12H5V20H10Z" fill="#6B7280"/>
+                </svg>
+                <span>Home</span>
+            </div>
+            
+            <div class="nav-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M8 5V7H16V5H8ZM6 9V7C6 5.9 6.9 5 8 5H16C17.1 5 18 5.9 18 7V9L20 11V17H18V19H16V17H8V19H6V17H4V11L6 9ZM8 11V15H16V11H8Z" fill="#6B7280"/>
+                </svg>
+                <span>Watch</span>
+            </div>
+            
+            <div class="nav-item active">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M16 4C16.55 4 17 4.45 17 5V6H20C20.55 6 21 6.45 21 7C21 7.55 20.55 8 20 8H17V19C17 20.1 16.1 21 15 21H9C7.9 21 7 20.1 7 19V8H4C3.45 8 3 7.55 3 7C3 6.45 3.45 6 4 6H7V5C7 4.45 7.45 4 8 4H16ZM15 8H9V19H15V8Z" fill="#8B5CF6"/>
+                </svg>
+                <span>Invite</span>
+            </div>
+            
+            <div class="nav-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H5.17L4 17.17V4H20V16Z" fill="#6B7280"/>
+                </svg>
+                <span>Chat</span>
+            </div>
+            
+            <div class="nav-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 5.5V7.5L21 9ZM22 17.5C22 19.11 20.61 20.5 19 20.5H5C3.39 20.5 2 19.11 2 17.5V10.5C2 8.89 3.39 7.5 5 7.5H19C20.61 7.5 22 8.89 22 10.5V17.5Z" fill="#6B7280"/>
+                </svg>
+                <span>Profile</span>
+            </div>
+        </nav>
+    </div>
+    
+    <script src="invite.js"></script>
+</body>
+</html>
